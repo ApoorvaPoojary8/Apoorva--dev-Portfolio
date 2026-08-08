@@ -21,8 +21,7 @@ function Experience() {
               </h1>
 
               <p className="font-body-lg text-body-lg text-on-surface-variant max-w-sm">
-                A chronological overview of professional roles,
-                highlighting technical contributions and project leadership.
+                
               </p>
 
             </div>
@@ -138,10 +137,16 @@ function Experience() {
               </h1>
 
               <p className="font-body-lg text-body-lg text-on-surface-variant max-w-sm">
-                Formal academic training focusing on computer science
-                principles, software engineering, and analytical
-                problem-solving.
+                
               </p>
+
+              <div className="w-full max-w-[320px]">
+      <img
+        src="/Study Girl.png"
+        alt="Developer working"
+        className="w-full h-auto object-contain"
+      />
+    </div>
 
             </div>
 
@@ -181,31 +186,33 @@ function Experience() {
               </div>
 
 
-              <div className="bg-surface-container p-8 rounded-xl relative overflow-hidden group-hover:bg-surface-container-high transition-colors duration-300">
+              <div className="bg-primary-container p-8 rounded-xl relative overflow-hidden group-hover:bg-primary transition-colors duration-300">
 
-                <div className="absolute bottom-0 left-0 w-32 h-32 bg-primary-container/10 rounded-tr-full -ml-8 -mb-8"></div>
+  {/* Decorative shape */}
+  <div className="absolute bottom-0 left-0 w-32 h-32 bg-white/10 rounded-tr-full -ml-8 -mb-8"></div>
 
-                <div className="font-body-md text-body-md text-on-surface-variant relative z-10">
+  <div className="font-body-md text-body-md text-white relative z-10">
 
-                  <div className="flex md:justify-end items-center gap-4 mb-4">
+    <div className="flex md:justify-end items-center gap-4 mb-4">
 
-                    <span className="font-headline-md text-headline-md text-on-surface">
-                      9.24
-                    </span>
+      {/* Grade */}
+      <span className="font-headline-md text-headline-md text-white font-semibold">
+        9.24
+      </span>
 
-                    <span className="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider">
-                      Current SGPA
-                    </span>
+      {/* Label */}
+      <span className="font-label-caps text-label-caps text-white uppercase tracking-wider">
+        Current SGPA
+      </span>
 
-                  </div>
+    </div>
 
-                  <p className="md:text-right max-w-md ml-auto">
-                    
-                  </p>
+    <p className="md:text-right max-w-md ml-auto text-white/90">
+    </p>
 
-                </div>
+  </div>
 
-              </div>
+</div>
 
             </div>
 
@@ -231,31 +238,39 @@ function Experience() {
                 </h2>
 
                 <h3 className="font-headline-md text-[24px] text-primary-container">
-                  Govt PU College for Girls
+                  Govt PU College for Girls , Carstreet.
                 </h3>
 
               </div>
 
 
-              <div className="bg-surface-container p-8 rounded-xl relative overflow-hidden opacity-80 group-hover:opacity-100 transition-opacity duration-300">
+              <div className="bg-primary-container p-8 rounded-xl relative overflow-hidden group-hover:bg-primary transition-colors duration-300">
 
-                <div className="font-body-md text-body-md text-on-surface-variant relative z-10">
+  {/* Decorative shape */}
+  <div className="absolute bottom-0 left-0 w-32 h-32 bg-white/10 rounded-tr-full -ml-8 -mb-8"></div>
 
-                  <div className="flex md:justify-end items-center gap-4">
+  <div className="font-body-md text-body-md text-white relative z-10">
 
-                    <span className="font-headline-md text-[32px] text-primary-container">
-                      94%
-                    </span>
+    <div className="flex md:justify-end items-center gap-4 mb-4">
 
-                    <span className="font-label-caps text-label-caps text-primary-container uppercase tracking-wider">
-                      Final Grade
-                    </span>
+      {/* Grade */}
+      <span className="font-headline-md text-headline-md text-white font-semibold">
+        94 %
+      </span>
 
-                  </div>
+      {/* Label */}
+      <span className="font-label-caps text-label-caps text-white uppercase tracking-wider">
+        Percentage
+      </span>
 
-                </div>
+    </div>
 
-              </div>
+    <p className="md:text-right max-w-md ml-auto text-white/90">
+    </p>
+
+  </div>
+
+</div>
 
             </div>
 
@@ -277,35 +292,43 @@ function Experience() {
                 </span>
 
                 <h2 className="font-headline-lg text-[40px] leading-[48px] font-semibold text-on-surface">
-                  Higher Secondary Education (12th)
+                  Higher Secondary Education 
                 </h2>
 
                 <h3 className="font-headline-md text-[24px] text-primary-container">
-                  St. Joseph's Central School
+                  SDM Mangala Jyothi Integrated School , Vamanjoor.
                 </h3>
 
               </div>
 
 
-              <div className="bg-surface-container p-8 rounded-xl relative overflow-hidden opacity-80 group-hover:opacity-100 transition-opacity duration-300">
+              <div className="bg-primary-container p-8 rounded-xl relative overflow-hidden group-hover:bg-primary transition-colors duration-300">
 
-                <div className="font-body-md text-body-md text-on-surface-variant relative z-10">
+  {/* Decorative shape */}
+  <div className="absolute bottom-0 left-0 w-32 h-32 bg-white/10 rounded-tr-full -ml-8 -mb-8"></div>
 
-                  <p className="md:text-right max-w-md ml-auto mb-4">
-                    Focus: Science & Mathematics
-                  </p>
+  <div className="font-body-md text-body-md text-white relative z-10">
 
-                  <div className="flex md:justify-end items-center gap-4">
+    <div className="flex md:justify-end items-center gap-4 mb-4">
 
-                    <span className="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider">
-                      Mysore, India
-                    </span>
+      {/* Grade */}
+      <span className="font-headline-md text-headline-md text-white font-semibold">
+        93 %
+      </span>
 
-                  </div>
+      {/* Label */}
+      <span className="font-label-caps text-label-caps text-white uppercase tracking-wider">
+        Percentage
+      </span>
 
-                </div>
+    </div>
 
-              </div>
+    <p className="md:text-right max-w-md ml-auto text-white/90">
+    </p>
+
+  </div>
+
+</div>
 
             </div>
 

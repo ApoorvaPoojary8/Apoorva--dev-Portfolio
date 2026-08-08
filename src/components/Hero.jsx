@@ -145,7 +145,7 @@ function Hero() {
               {/* Github */}
               <a
                 className="text-on-surface-variant hover:text-primary transition-colors flex items-center justify-center w-10 h-10 rounded-full hover:bg-surface-container-high"
-                href="#"
+                href="https://github.com/ApoorvaPoojary8"
               >
 
                 <svg
@@ -163,7 +163,7 @@ function Hero() {
               {/* LinkedIn */}
               <a
                 className="text-on-surface-variant hover:text-primary transition-colors flex items-center justify-center w-10 h-10 rounded-full hover:bg-surface-container-high"
-                href="#"
+                href="https://www.linkedin.com/in/apoorvapoojary/"
               >
 
                 <svg
@@ -178,13 +178,16 @@ function Hero() {
               </a>
 
 
-              {/* LeetCode */}
-              <a
-                className="text-on-surface-variant hover:text-primary transition-colors flex items-center justify-center w-10 h-10 rounded-full hover:bg-surface-container-high font-label-caps text-[14px]"
-                href="#"
-              >
-                LC
-              </a>
+             {/* LeetCode */}
+<a
+  className="text-on-surface-variant hover:text-primary transition-colors flex items-center justify-center w-10 h-10 rounded-full hover:bg-surface-container-high font-label-caps text-[14px]"
+  href="https://leetcode.com/u/apoorvapoojary/"
+  target="_blank"
+  rel="noopener noreferrer"
+  aria-label="LeetCode"
+>
+  LC
+</a>
 
             </div>
 

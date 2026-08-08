@@ -68,7 +68,7 @@ function Footer() {
               </h4>
 
               <a
-                href="mailto:apoorvapoojary8@gmail.com"
+                href="mailto:abheeshta.p@gmail.com"
                 className="text-on-surface-variant hover:text-primary transition-colors"
               >
                 Email

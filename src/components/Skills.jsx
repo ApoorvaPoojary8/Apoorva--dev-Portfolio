@@ -1,5 +1,5 @@
 // import React from "react";
-import React from "react";
+import React, { useState } from "react";
 
 import {
   FaJava,
@@ -21,6 +21,7 @@ import {
   SiMysql,
 } from "react-icons/si";
 function Skills() {
+  const [showCat, setShowCat] = useState(false);
 
 const skills = [
   {
@@ -142,34 +143,35 @@ const skills = [
             <h1 className="font-display text-[72px] md:text-[96px] leading-[1.1] tracking-tight text-on-surface mb-10 relative">
 
               <span className="absolute -left-8 -top-12 text-primary-container/10 text-[180px] font-accent-script leading-none select-none z-[-1]">
-                W
+                T
               </span>
 
-              What I
+             My
               <br />
-              work
+              Technical
               <br />
-              with.
+             Stack.
             </h1>
 
             <div className="w-24 h-[3px] bg-primary-container mb-10 rounded-full"></div>
 
             <p className="font-body-lg text-body-lg text-on-surface-variant max-w-md mb-16 lg:mb-0">
-              A curated selection of the tools and technologies I use to build
-              robust, scalable software. I approach technical choices with a
-              focus on solving problems elegantly.
+              I build applications using a combination of programming languages,
+  frontend technologies, backend tools, and databases. My focus is on
+  writing clean code, solving problems, and continuously expanding my
+  technical skills.
             </p>
 
             <div className="hidden lg:flex flex-col gap-4 mt-auto pb-4">
 
               <span className="font-label-caps text-[14px] tracking-[0.2em] text-outline-variant">
-                APOORVA — TECHNICAL STACK
+               
               </span>
 
               <div className="w-3/4 h-px bg-outline-variant/30"></div>
 
               <span className="font-body-md text-body-md text-on-surface-variant">
-                2024 Edition
+                
               </span>
 
             </div>
