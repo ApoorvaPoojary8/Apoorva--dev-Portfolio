@@ -214,7 +214,7 @@ function Hero() {
             <img
               alt="Apoorva Portrait"
               className="w-full h-full object-cover scale-[1.02] hover:scale-105 transition-transform duration-700 ease-[cubic-bezier(0.25,1,0.5,1)]"
-              src="/public/Hero.jpeg"
+              src="/Hero.jpeg"
             />
 
             <div className="absolute inset-0 border border-surface-container-lowest/20 rounded-2xl pointer-events-none"></div>
