@@ -35,7 +35,7 @@ function Projects() {
       description:
         "A high-performance certificate management system. Architected to bulk-generate, verify, and distribute personalized PDFs at scale. Processed over 50 certificates in under 2 minutes.",
       image:
-        "https://lh3.googleusercontent.com/aida-public/AB6AXuCROO9-8OOv_yg89544Nptgt5VPnelaIncLLXx73YYMmO85zOS2z_7odFXvYvxgD6bxHBsTkvpQORpLXWjWWpsa4lR4vaZS7-flmNNsaJt7id7uolqEqCRzm_sQP34jyzhG0qOpuZjv99IlBSUBesa5VURh7FkzBTVGsAK7fkJzIhEwJsK2zNOVjWNZwGfY6yhurkIV6RVp3jB9jo9SGcgpucX_dTiPKl577UhjIO318gje5aN8XRdt4A",
+        "/CertigyHub.png",
       technologies: [
         "React",
         "Node.js",
@@ -53,7 +53,7 @@ function Projects() {
       description:
         "A comprehensive hostel maintenance tracking platform bridging the gap between residents and facility managers. Features robust role-based access, OTP authentication, and an intelligent auto-escalation matrix for unresolved issues.",
       image:
-        "https://lh3.googleusercontent.com/aida-public/AB6AXuAj-Q3d7D4Ml6KGtIuTaD9KcXTtwLRYz3wnctfR_K3qpKZzRV07ppN9JthZyOjqZ40OlbpT6RyfECmtVhBlZtaJgSaNtY4PCGp973y4z1G-WhKSooqcWomHzx_QfG6bAJF68WxXk3QZl6oXDR1fr6OkZy1AKt43wW6meKtUGo8t-rqMdnMM2pwueFhU6aZ24UD6WZlSMh2c0gTh7I6hAKhwDuaXbk4Qx1HL5qZuqaVmvLfADFMlgyK3lQ",
+        "/Prism.png",
       technologies: [
         "React",
         "Node.js",
@@ -150,18 +150,26 @@ function Projects() {
               >
 
                 {/* PROJECT IMAGE */}
-                <div className="w-full lg:w-7/12 relative aspect-[4/3] rounded-xl overflow-hidden shadow-lg transition-transform duration-700 ease-out group-hover:scale-[1.02]">
+               {/* PROJECT IMAGE */}
+<div className="w-full lg:w-7/12 flex items-center justify-center rounded-xl overflow-hidden shadow-lg bg-surface-container">
 
-                  <div
-                    className="absolute inset-0 bg-cover bg-center transition-transform duration-1000 group-hover:scale-105"
-                    style={{
-                      backgroundImage: `url('${project.image}')`,
-                    }}
-                  ></div>
+  <img
+    src={project.image}
+    alt={project.title}
+    className="
+      block
+      w-full
+      h-auto
+      max-h-[500px]
+      object-contain
+      transition-transform
+      duration-700
+      ease-out
+      group-hover:scale-[1.02]
+    "
+  />
 
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
-
-                </div>
+</div>
 
                 {/* PROJECT DETAILS */}
                 <div className="w-full lg:w-5/12 flex flex-col items-start relative">
