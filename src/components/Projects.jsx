@@ -1,10 +1,5 @@
 import React, { useEffect, useState } from "react";
-import {
-  ArrowLeft,
-  ArrowRight,
-  ExternalLink,
-  Code2,
-} from "lucide-react";
+import { ArrowLeft, ArrowRight, ExternalLink, Code2 } from "lucide-react";
 
 function Projects() {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -18,12 +13,7 @@ function Projects() {
         "An AI-powered platform for generating User-Generated Content style advertisements. Leveraging the Gemini API to construct compelling narratives and paired with automated image processing.",
       image:
         "https://lh3.googleusercontent.com/aida-public/AB6AXuAMrjc1C8MhI2mT-02_ikz9iyvEamcbMH-sbSubUxBIsXO6uBrojW359EWw6r5g1TG3XBcUnk5v6FHS6vX1qUG5K-8l262nJff3WswHCSOszoyotTmmvqkbVWUwMZjW3MwJQNzxdxBfN_UxCK1PGXgOf-iphwy4Z6buM8X9WMgTqaT_Sc2wmW8nFY1T2C5BxR6csR71ybkl3Ts9A7NBHCufEiWmJrZFxn15BCmcqYqY9eizYSuXRomg6Q",
-      technologies: [
-        "React",
-        "Node.js",
-        "Gemini API",
-        "PostgreSQL",
-      ],
+      technologies: ["React", "Node.js", "Gemini API", "PostgreSQL"],
       liveDemo: "#",
       sourceCode: "#",
     },
@@ -34,16 +24,10 @@ function Projects() {
       title: "CertifyHub",
       description:
         "A high-performance certificate management system. Architected to bulk-generate, verify, and distribute personalized PDFs at scale. Processed over 50 certificates in under 2 minutes.",
-      image:
-        "/CertigyHub.png",
-      technologies: [
-        "React",
-        "Node.js",
-        "MongoDB",
-        "PDF-Lib",
-      ],
+      image: "/CertigyHub.png",
+      technologies: ["React", "Node.js", "MongoDB", "PDF-Lib"],
       liveDemo: "#",
-      sourceCode: "#",
+      sourceCode: "https://github.com/ApoorvaPoojary8/CertifyHub.git",
     },
 
     {
@@ -52,13 +36,8 @@ function Projects() {
       title: "PRISM",
       description:
         "A comprehensive hostel maintenance tracking platform bridging the gap between residents and facility managers. Features robust role-based access, OTP authentication, and an intelligent auto-escalation matrix for unresolved issues.",
-      image:
-        "/Prism.png",
-      technologies: [
-        "React",
-        "Node.js",
-        "MySQL",
-      ],
+      image: "/Prism.png",
+      technologies: ["React", "Node.js", "MySQL"],
       liveDemo: "#",
       sourceCode: "#",
     },
@@ -69,9 +48,7 @@ function Projects() {
   };
 
   const prevSlide = () => {
-    setCurrentIndex(
-      (prev) => (prev - 1 + projects.length) % projects.length
-    );
+    setCurrentIndex((prev) => (prev - 1 + projects.length) % projects.length);
   };
 
   const goToSlide = (index) => {
@@ -98,12 +75,9 @@ function Projects() {
 
   return (
     <main className="w-full pt-20 bg-surface">
-
       <div className="flex flex-col w-full px-margin-mobile md:px-margin-tablet lg:px-margin-desktop py-section-gap max-w-container-max mx-auto overflow-hidden">
-
         {/* HEADER */}
         <div className="mb-12 relative flex items-center justify-between">
-
           <h1 className="font-display text-display text-on-surface relative z-10">
             Things I've built.
           </h1>
@@ -112,7 +86,6 @@ function Projects() {
 
           {/* Desktop buttons */}
           <div className="hidden md:flex gap-4">
-
             <button
               onClick={prevSlide}
               aria-label="Previous project"
@@ -128,35 +101,29 @@ function Projects() {
             >
               <ArrowRight size={20} />
             </button>
-
           </div>
         </div>
 
         {/* SLIDER */}
         <div className="relative overflow-hidden">
-
           <div
             className="flex transition-transform duration-500 ease-in-out"
             style={{
               transform: `translateX(-${currentIndex * 100}%)`,
             }}
           >
-
             {projects.map((project) => (
-
               <div
                 key={project.number}
                 className="w-full flex-shrink-0 flex flex-col lg:flex-row items-center gap-12 lg:gap-24 group"
               >
-
                 {/* PROJECT IMAGE */}
-               {/* PROJECT IMAGE */}
-<div className="w-full lg:w-7/12 flex items-center justify-center rounded-xl overflow-hidden shadow-lg bg-surface-container">
-
-  <img
-    src={project.image}
-    alt={project.title}
-    className="
+                {/* PROJECT IMAGE */}
+                <div className="w-full lg:w-7/12 flex items-center justify-center rounded-xl overflow-hidden shadow-lg bg-surface-container">
+                  <img
+                    src={project.image}
+                    alt={project.title}
+                    className="
       block
       w-full
       h-auto
@@ -167,24 +134,20 @@ function Projects() {
       ease-out
       group-hover:scale-[1.02]
     "
-  />
-
-</div>
+                  />
+                </div>
 
                 {/* PROJECT DETAILS */}
                 <div className="w-full lg:w-5/12 flex flex-col items-start relative">
-
                   {/* Project number */}
                   <span className="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-widest [writing-mode:vertical-rl] absolute -ml-12 hidden lg:block rotate-180">
                     {project.number}
                   </span>
 
                   <div className="flex items-center gap-4 mb-4">
-
                     <span className="font-label-caps text-label-caps text-primary uppercase">
                       {project.category}
                     </span>
-
                   </div>
 
                   <h2 className="font-headline-lg text-headline-lg text-on-surface mb-6">
@@ -197,7 +160,6 @@ function Projects() {
 
                   {/* Technologies */}
                   <div className="flex flex-wrap gap-2 mb-10">
-
                     {project.technologies.map((tech) => (
                       <span
                         key={tech}
@@ -206,12 +168,10 @@ function Projects() {
                         {tech}
                       </span>
                     ))}
-
                   </div>
 
                   {/* Buttons */}
                   <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 w-full">
-
                     <a
                       href={project.liveDemo}
                       className="w-full sm:w-auto px-6 py-3 bg-primary text-on-primary rounded-lg font-label-caps text-label-caps hover:bg-primary-container hover:text-on-primary-container transition-all shadow-md hover:shadow-lg flex items-center justify-center gap-2"
@@ -222,29 +182,23 @@ function Projects() {
 
                     <a
                       href={project.sourceCode}
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="w-full sm:w-auto px-6 py-3 border border-outline rounded-lg text-on-surface font-label-caps text-label-caps hover:border-primary hover:text-primary transition-colors flex items-center justify-center gap-2"
                     >
                       Visit Source Code
                       <Code2 size={18} />
                     </a>
-
                   </div>
-
                 </div>
-
               </div>
-
             ))}
-
           </div>
-
         </div>
 
         {/* DOTS */}
         <div className="flex justify-center mt-12 gap-2">
-
           {projects.map((_, index) => (
-
             <button
               key={index}
               aria-label={`Go to slide ${index + 1}`}
@@ -255,14 +209,11 @@ function Projects() {
                   : "bg-outline-variant hover:bg-primary"
               }`}
             ></button>
-
           ))}
-
         </div>
 
         {/* MOBILE ARROWS */}
         <div className="flex md:hidden justify-center mt-8 gap-4">
-
           <button
             onClick={prevSlide}
             aria-label="Previous project"
@@ -278,11 +229,8 @@ function Projects() {
           >
             <ArrowRight size={20} />
           </button>
-
         </div>
-
       </div>
-
     </main>
   );
 }
