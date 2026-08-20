@@ -11,7 +11,7 @@ function Projects() {
       title: "AdGen AI",
       description:
         "An AI-powered platform for generating User-Generated Content style advertisements. Leveraging the Gemini API to construct compelling narratives and paired with automated image processing.",
-      image:"/public/AdGenAI.png",
+      image:"/AdGenAI.png",
       technologies: ["React", "Node.js", "Gemini API", "PostgreSQL"],
       liveDemo: "#",
       sourceCode: "#",
